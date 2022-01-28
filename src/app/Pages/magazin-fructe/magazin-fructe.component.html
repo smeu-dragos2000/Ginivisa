@@ -1,0 +1,51 @@
+<!-- Header -->
+<section class="header-container">
+  <!-- Background image -->
+  <img class="header-image-background" src="assets/images/Header-Fructe.jpg" alt="">
+  <div class="gradient"></div>
+
+  <!-- Header content -->
+  <div class="container header-content">
+    <div class="header-logo">
+      <img src="assets/images/Logo Ginivisa.png" alt="">
+    </div>
+    <!-- Header Title -->
+    <div class="header-title">
+      <h2 class="green">Fructele tale bio au gustul Gorjului</h2>
+    </div>
+  </div>
+</section>
+
+<!-- Page Content -->
+<div class="container">
+  <!-- Magazin Fructe -->
+  <section>
+    <h4 class="green">Fructele bio de la Ferma Gorjului, izvorul tău de sănătate!</h4>
+    <p>
+      Ne dorim să oferim cumpărătorilor o gamă largă de unde își pot alege produsele dorite, astfel am pregătit pentru voi o suprafață de 5000 de mp de solarii cu fructe. Ce avantaje aveți cumpărând de la noi?
+    </p>
+    <h5 class="green">Ce avantaje aveți cumpărând de la noi?</h5>
+    <ul>
+      <li>Un avantaj foarte important la Ginivișa, pe care nu-l dețin toate fermele din această industrie, este acela că aici <strong>puteți culege fructele direct din solarii</strong>, având ocazia în acest mod să vedeți condițiile și ambientul în care au fost crescute. Adresa plantației noastre este comuna Peștișani, sat Gureni, Nr. 84.</li>
+      <li><strong>livrarea la domiciliu</strong> se face prompt și la timp,în localitate. Suntem punctuali și în livrările către orașul Târgu Jiu. Aici, însă, cantitatea livrată trebuie să fie de <strong>minimum 5 kg</strong>.</li>
+      <li>cumpărarea directă de la standurile  din <strong>Piața Centrală</strong> și <strong>Piața 9 Mai</strong> din Tg-Jiu, unde puteți degusta și cere mai multe detalii despre fructele noastre.</li>
+      <li>oferim și posibilitatea <strong>contractelor de colaborare</strong> cu firme sau persoane care cumpără produsele noastre în cantități mai mari, cu o anumită frecvență. În aceste cazuri, punem accentul pe ideea de fidelizare a clienților, iar avantajul comercial va fi evident.</li>
+    </ul>
+    <p>Pentru comenzi sau delatii ne puteti contacta la tel: <strong>+40 784 503 599</strong>  sau email: <strong>ginivisa@ginivisa.com </strong></p>
+    <!-- <p>Dacă doriți să aflați mai multe informații despre fructele noastre, vă invităm să accesați următorul link:</p> -->
+
+  </section>
+
+  <section class="text-center">
+    <button  *ngIf="!displayFructe"  (click)="showDespreFructe()">Despre Fructe  &#11167;</button>
+    <button  *ngIf="displayFructe"  (click)="hideDespreFructe()">Despre Fructe  &#10006;</button>
+    <hr>
+  </section>
+
+  <section>
+    <app-fructe *ngIf="displayFructe"></app-fructe>
+  </section>
+
+
+
+</div>

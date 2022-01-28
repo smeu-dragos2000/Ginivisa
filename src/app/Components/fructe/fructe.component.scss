@@ -1,0 +1,13 @@
+@media only screen and (max-width: 471px) {
+  .thumb-container {
+    flex-direction: column;
+
+    .image-container {
+
+      img {
+        object-fit: cover;
+        height: 60px;
+      }
+    }
+  }
+}

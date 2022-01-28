@@ -1,0 +1,32 @@
+<!-- Header -->
+<section class="header-container">
+  <!-- Background image -->
+  <img class="header-image-background" src="assets/images/Header-Noutati.jpg" alt="">
+  <div class="gradient"></div>
+
+  <!-- Header content -->
+  <div class="container header-content">
+    <div class="header-logo">
+      <img src="assets/images/Logo Ginivisa.png" alt="">
+    </div>
+    <!-- Header Title -->
+    <div class="header-title">
+      <h1 class="green">Pentru sanatate si relaxare</h1>
+    </div>
+  </div>
+</section>
+
+
+<!-- Page Content -->
+<div class="container"><
+  <section>
+    <h3 class="page-header">Noutăți</h3>
+
+    <div class="news-container" *ngFor="let news of newsList">
+      <h4>{{news.title}}</h4>
+      <p>{{news.article}}</p>
+      <button>Citeste</button>
+    </div>
+
+  </section>
+</div>

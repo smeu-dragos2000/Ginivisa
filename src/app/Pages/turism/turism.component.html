@@ -1,0 +1,81 @@
+<!-- Header -->
+<section class="header-container">
+  <!-- Background image -->
+  <img class="header-image-background" src="assets/images/Header-Turism1.jpg" alt="">
+  <div class="gradient"></div>
+
+  <!-- Header content -->
+  <div class="container header-content">
+    <div class="header-logo">
+      <img src="assets/images/Logo Ginivisa.png" alt="">
+    </div>
+    <!-- Header Title -->
+    <div class="header-title">
+      <h1 class="blue">Ginivișa Gorjului</h1>
+      <h2 class="green">Aducem Valea Bistriței mai aproape de tine!</h2>
+    </div>
+  </div>
+</section>
+
+<!-- Page Content -->
+<div class="container">
+  <!-- Region Description -->
+  <section>
+    <h4 class="green">De ce să vizitezi Valea Bistriței de Gorj?</h4>
+    <p>
+      Scriitoarea Delia Mitroi scria într-un articol că Valea Bistriței de Gorj este <a href="https://www.valeabistritei.org/valea-bistritei-gorjene/">„paradisul montan dintre ape”</a>. Frumusețea naturii sălbatice îți vrăjește privirea, iar aerul curat și tare de la poalele Masivului Vâlcan este un adevărat antidot pentru plămânii tăi. Poate că până acum nici n-ai avut idee câte minunății poți vizita atât de aproape de casă. Poate nici nu te-ai gândit că într-o scurtă excursie la Peștișani ți-ai putea redescoperi identitatea, spiritualitatea sau adevărata fericire. Ei bine, aici ai toate șansele să o faci. Înconjurat de râul Bistrița, de păduri verzi și la un pas de magia monumentelor naturii create de Defileul Jiului, te poți lăsa pradă visării, în timp ce îți pierzi urmele pașilor într-o altfel de Românie. În România strămoșilor, în România datinilor și a tradițiilor neaoșe, în inima primei provincii latine - Oltenia.
+    </p>
+  </section>
+
+  <section>
+    <h4 class="green">Unde te-ai putea caza pe Valea Bistriței Gorjene?</h4>
+    <p>
+      Dacă alegi să-ți petreci weekendul sau vacanța la Peștișani, pe Valea Bistriței, noi îți oferim cele mai avantajoase locuri de cazare, privind raportul calitate-preț! Nu trebuie decât să ne vizitezi pensiunile (online sau fizic) și să-ți rezervi locul din timp, iar noi îți asigurăm un sejur de poveste! Găzduit în pensiunile noastre, vei fi foarte aproape de principalele atracții turistice ale județului Gorj (Mănăstirea Tismana, municipiul Târgu Jiu, Casa Memorială „Constantin Brâncuși”, Cheile Sohodolului, Muzeul Satului, ș.a.). Noi îți oferim cele mai bune condiții de cazare! Ție nu-ți rămâne decât să descoperi comorile Gorjului și să te încarci cu energie pură!
+    </p>
+  </section>
+
+
+  <section>
+    <hr>
+    <div class="thumb-container">
+      <!-- Hanul Vanatorului -->
+      <div class="thumb-link turism-thumb">
+        <div class="image-container">
+          <img src="assets/images/Turism/MainThumb - Hanul Vanatorului.jpg" alt="">
+        </div>
+        <h4>Hanul Vânătorului</h4>
+        <div class="turism-thumb-row">
+          <button class="btn-galerie" (click)="showHan(); scroll(target)">Despre &#11167;</button>
+          <a [href]="linkHan" target="blank"><button class="btn-rezerva">Rezerva</button></a>
+        </div>
+      </div>
+      <!-- Vila Ana -->
+      <div class="thumb-link turism-thumb">
+        <div class="image-container">
+          <img src="assets/images/Turism/MainThumb - Vila Ana.jpg" alt="">
+        </div>
+        <h4>Vila Ana</h4>
+        <div class="turism-thumb-row">
+          <button class="btn-galerie" (click)="showAna(); scroll(target)">Despre &#11167;</button>
+          <a [href]="linkAna" target="blank"><button class="btn-rezerva">Rezerva</button></a>
+        </div>
+      </div>
+    </div>
+    <hr>
+  </section>
+
+
+  <div #target  class="space-for-scrollTo"></div>
+
+  <!-- Description -->
+  <section class="description-container">
+    <div>
+      <button *ngIf="!home" class="close-container"  (click)="hideAll()">&#10006;</button>
+      <app-turism-descriere-vanator *ngIf="han"></app-turism-descriere-vanator>
+      <app-turism-descriere-ana *ngIf="ana"></app-turism-descriere-ana>
+    </div>
+  </section>
+
+</div>
+
+
