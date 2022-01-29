@@ -21,6 +21,7 @@ const routes: Routes = [
   {path: 'noutati', component: NoutatiComponent},
   {path: 'joburi', component: JoburiComponent},
   {path: 'donatie', component: DonatieComponent},
+  {path: '**', component: HomeComponent},
   // {path: 'admin', component: AdminComponent},
 ];
 

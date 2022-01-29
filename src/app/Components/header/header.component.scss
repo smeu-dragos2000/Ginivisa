@@ -37,9 +37,15 @@
 
 
 // Align navLinks to center on small screen
-@media screen and (max-width: 920px) {
+@media screen and (max-width: 991px) {
   ul {
-    align-items: center;
+    align-items: center !important;
+    li {
+      margin: auto !important;
+      a {
+        margin: auto !important;
+      }
+    }
   }
 }
 

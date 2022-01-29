@@ -1,15 +1,12 @@
 
 // Font import
-// @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&display=swap');
 // @import url('https://fonts.googleapis.com/css2?family=Salsa&display=swap');
-
-
 
 * {
   font-family: 'Poppins', sans-serif;
   transition: all 100ms;
 }
-
 
 h1, h2, h3, h4, h5, h6 {
   font-weight: bold;
@@ -72,7 +69,7 @@ h1, h2, h3, h4, h5, h6 {
       max-width: fit-content;
       // text-shadow: 1px 1px 1px black;
       text-shadow: 0 0 20px white,
-                    2px 2px 2px black;
+                    1px 1px 1px black;
 
       h1 {
         font-size: 2.8rem;
@@ -150,7 +147,7 @@ h1, h2, h3, h4, h5, h6 {
 
 // Button
 button {
-  // background-color: black;
+  font-family: sans-serif;
   background-color: #003f1d;
   color: white;
   padding: 10px 30px;
@@ -177,17 +174,21 @@ p {
   height: 1rem;
 }
 
+
 // Media Query
 @media only screen and (max-width: 1200px) {
   .header-container {
     .header-content {
-      gap: .5rem;
+      gap: 2rem;
+      .header-logo {
+        width: 180px;
+      }
       .header-title {
         h1 {
-          font-size: 2.6rem !important;
+          font-size: 2.4rem !important;
         }
         h2 {
-          font-size: 2.2rem !important;
+          font-size: 2rem !important;
         }
       }
     }
@@ -197,13 +198,16 @@ p {
 @media only screen and (max-width: 991px) {
   .header-container {
     .header-content {
-      gap: .5rem;
+      gap: 2rem;
+      .header-logo {
+        width: 140px;
+      }
       .header-title {
         h1 {
-          font-size: 2.6rem !important;
+          font-size: 2.2rem !important;
         }
         h2 {
-          font-size: 2.2rem !important;
+          font-size: 1.6rem !important;
         }
       }
     }
@@ -217,12 +221,13 @@ p {
   .header-container {
     height: 500px;
     .header-content {
+      gap: 1rem;
       .header-title {
         h1 {
-          font-size: 2.4rem !important;
+          font-size: 1.6rem !important;
         }
         h2 {
-          font-size: 2rem !important;
+          font-size: 1.4rem !important;
         }
       }
     }
