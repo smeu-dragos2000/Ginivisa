@@ -36,12 +36,15 @@
 
   </section>
 
-  <section class="text-center">
-    <button  *ngIf="!displayFructe"  (click)="showDespreFructe()">Despre Fructe  &#11167;</button>
-    <button  *ngIf="displayFructe"  (click)="hideDespreFructe()">Despre Fructe  &#10006;</button>
+  <section class="despre-fructe">
+    <button  *ngIf="!displayFructe"  (click)="showDespreFructe()">Despre Fructe  <span class="material-icons">expand_more</span></button>
+    <button  *ngIf="displayFructe"  (click)="hideDespreFructe()">Despre Fructe  <span class="material-icons">close</span></button>
 
-    <hr>
+    <!-- <button  *ngIf="!displayFructe"  (click)="showDespreFructe()">Despre Fructe  &#11167;</button>
+    <button  *ngIf="displayFructe"  (click)="hideDespreFructe()">Despre Fructe  &#10006;</button> -->
   </section>
+
+  <hr>
 
   <section>
     <app-fructe *ngIf="displayFructe"></app-fructe>

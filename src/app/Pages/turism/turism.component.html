@@ -35,7 +35,7 @@
   </section>
 
 
-  <section>
+  <section  #target>
     <hr>
     <div class="thumb-container">
       <!-- Hanul Vanatorului -->
@@ -45,7 +45,7 @@
         </div>
         <h4>Hanul Vânătorului</h4>
         <div class="turism-thumb-row">
-          <button class="btn-galerie" (click)="showHan(); scroll(target)">Despre &#11167;</button>
+          <button class="btn-galerie" (click)="showHan(); scroll(target)">Despre <span class="material-icons">expand_more</span></button>
           <a [href]="linkHan" target="blank"><button class="btn-rezerva">Rezerva</button></a>
         </div>
       </div>
@@ -56,7 +56,7 @@
         </div>
         <h4>Vila Ana</h4>
         <div class="turism-thumb-row">
-          <button class="btn-galerie" (click)="showAna(); scroll(target)">Despre &#11167;</button>
+          <button class="btn-galerie" (click)="showAna(); scroll(target)">Despre <span class="material-icons">expand_more</span></button>
           <a [href]="linkAna" target="blank"><button class="btn-rezerva">Rezerva</button></a>
         </div>
       </div>
@@ -64,13 +64,10 @@
     <hr>
   </section>
 
-
-  <div #target  class="space-for-scrollTo"></div>
-
   <!-- Description -->
   <section class="description-container">
     <div>
-      <button *ngIf="!home" class="close-container"  (click)="hideAll()">&#10006;</button>
+      <button *ngIf="!home" class="close-container"  (click)="hideAll()"><span class="material-icons">close</span></button>
       <app-turism-descriere-vanator *ngIf="han"></app-turism-descriere-vanator>
       <app-turism-descriere-ana *ngIf="ana"></app-turism-descriere-ana>
     </div>
