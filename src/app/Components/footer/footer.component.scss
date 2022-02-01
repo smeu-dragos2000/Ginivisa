@@ -43,6 +43,13 @@ footer {
         }
         .footer-link {
           cursor: pointer;
+          a {
+            color: rgb(205, 205, 205);
+            &:hover {
+              color: white;
+              text-decoration: none;
+            }
+          }
           &:hover {
             color: white;
           }

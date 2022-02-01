@@ -61,7 +61,7 @@ h1, h2, h3, h4, h5, h6 {
     transform: translate(-50%, -50%);
     margin-top: 2rem;
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-start;
     align-items: center;
     gap: 1rem;
 
@@ -200,7 +200,7 @@ p {
 @media only screen and (max-width: 991px) {
   .header-container {
     .header-content {
-      gap: 2rem;
+      gap: 1rem;
       .header-logo {
         width: 140px;
       }
