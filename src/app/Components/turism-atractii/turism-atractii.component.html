@@ -1,0 +1,21 @@
+<section>
+    <h4 class="green">Atractii Turistice</h4>
+    <p>Iata ce poti vizita in vecinatatea noastra:</p>
+
+    <div class="atractii-gallery">
+
+      <div class="atractii-item text-center" *ngFor="let atractie of Atractii">
+        <img src={{atractie.imageURL}} alt="">
+        <h5>{{atractie.title}}</h5>
+      </div>
+
+    </div>
+    <!-- Modal -->
+    <!-- <div class="atractii-modal"></div>
+    <div class="" *ngFor="let atractie of Atractii">
+      <img src={{atractie.imageURL}} alt="">
+      <h4>{{atractie.title}}</h4>
+      <p>{{ atractie.text }}</p>
+    </div> -->
+
+</section>

@@ -27,50 +27,23 @@
     </p>
   </section>
 
-  <section>
-    <h4 class="green">Unde te-ai putea caza pe Valea Bistriței Gorjene?</h4>
-    <p>
-      Dacă alegi să-ți petreci weekendul sau vacanța la Peștișani, pe Valea Bistriței, noi îți oferim cele mai avantajoase locuri de cazare, privind raportul calitate-preț! Nu trebuie decât să ne vizitezi pensiunile (online sau fizic) și să-ți rezervi locul din timp, iar noi îți asigurăm un sejur de poveste! Găzduit în pensiunile noastre, vei fi foarte aproape de principalele atracții turistice ale județului Gorj (Mănăstirea Tismana, municipiul Târgu Jiu, Casa Memorială „Constantin Brâncuși”, Cheile Sohodolului, Muzeul Satului, ș.a.). Noi îți oferim cele mai bune condiții de cazare! Ție nu-ți rămâne decât să descoperi comorile Gorjului și să te încarci cu energie pură!
-    </p>
-  </section>
 
+  <div class="buttons-container">
 
-  <section  #target>
-    <hr>
-    <div class="thumb-container">
-      <!-- Hanul Vanatorului -->
-      <div class="thumb-link turism-thumb">
-        <div class="image-container">
-          <img src="assets/images/Turism/MainThumb - Hanul Vanatorului.jpg" alt="">
-        </div>
-        <h4>Hanul Vânătorului</h4>
-        <div class="turism-thumb-row">
-          <button class="btn-galerie" (click)="showHan(); scroll(target)">Despre <span class="material-icons">expand_more</span></button>
-          <a [href]="linkHan" target="blank"><button class="btn-rezerva">Rezerva</button></a>
-        </div>
-      </div>
-      <!-- Vila Ana -->
-      <div class="thumb-link turism-thumb">
-        <div class="image-container">
-          <img src="assets/images/Turism/MainThumb - Vila Ana.jpg" alt="">
-        </div>
-        <h4>Vila Ana</h4>
-        <div class="turism-thumb-row">
-          <button class="btn-galerie" (click)="showAna(); scroll(target)">Despre <span class="material-icons">expand_more</span></button>
-          <a [href]="linkAna" target="blank"><button class="btn-rezerva">Rezerva</button></a>
-        </div>
-      </div>
-    </div>
-    <hr>
-  </section>
+    <button *ngIf="!displayAtractii" class="btn-galerie" (click)="showAtractii(); scroll(target)">Atractii <span class="material-icons">expand_more</span></button>
 
-  <!-- Description -->
-  <section class="description-container">
-    <div>
-      <button *ngIf="!home" class="close-container"  (click)="hideAll()"><span class="material-icons">close</span></button>
-      <app-turism-descriere-vanator *ngIf="han"></app-turism-descriere-vanator>
-      <app-turism-descriere-ana *ngIf="ana"></app-turism-descriere-ana>
-    </div>
+    <button *ngIf="displayAtractii" class="btn-galerie" (click)="hideAtractii(); scroll(target)">Atractii <span class="material-icons">close</span></button>
+
+    <button *ngIf="!displayCazare" class="btn-galerie" (click)="showCazare(); scroll(target)">Cazare <span class="material-icons">expand_more</span></button>
+
+    <button *ngIf="displayCazare" class="btn-galerie" (click)="hideCazare(); scroll(target)">Cazare <span class="material-icons">close</span></button>
+  </div>
+
+  <hr>
+
+  <section #target>
+    <app-turism-atractii *ngIf="displayAtractii"></app-turism-atractii>
+    <app-turism-cazare *ngIf="displayCazare"></app-turism-cazare>
   </section>
 
 </div>

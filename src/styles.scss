@@ -11,15 +11,14 @@
 h1, h2, h3, h4, h5, h6 {
   font-weight: bold;
 }
+
 // Text Color
 .green {
-  // color: #005025;
-  // color: #44B549;
+
   color: #009848;
 }
 .blue {
-  // color: #194a75;
-  // color: #33C5F3;
+
   color: #478ECC;
 }
 .blue-link {
@@ -157,7 +156,7 @@ button {
   font-size: 18px;
   transition: all 100ms;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   &:hover {
     opacity: 0.8;

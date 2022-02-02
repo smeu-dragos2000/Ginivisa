@@ -21,10 +21,16 @@
 <div class="container">
   <section>
 
-    <div class="news-container" *ngFor="let news of newsList">
-      <h4  class="green">{{news.title}}</h4>
-      <p>{{news.article}}</p>
-      <button>Citeste</button>
+    <div class="news-container"  *ngFor="let news of newsList; let i=index" >
+      <div class="news-item" >
+        <h4  class="green">{{news.title}} ...</h4>
+        <div class="iff" *ngIf="news.displayNews">
+          <p >{{news.content}}</p>
+        </div>
+
+
+      </div>
+      <button (click)="toggleContent(i)"  [innerHTML]="!news.displayNews ? 'Citeste' : inchide"></button>
     </div>
 
   </section>

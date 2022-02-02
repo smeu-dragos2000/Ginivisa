@@ -1,44 +1,5 @@
-.turism-thumb {
-  max-width: 400px;
-  cursor:default;
-  img {
-    max-height: 200px;
-  }
-  .turism-thumb-row {
-    width: 100%;
-    display: flex;
-    justify-content: space-around;
-  }
-}
-
-.description-container {
-  position: relative;
-  .close-container {
-    position: absolute;
-    top: -1rem;
-    right: 0;
-  }
-}
-
-@media only screen and (max-width: 767px) {
-  .thumb-container {
-    .turism-thumb-row {
-      button {
-        padding: 10px 20px;
-      }
-    }
-  }
-}
-
-@media only screen and (max-width: 510px) {
-  .thumb-container {
-    flex-direction: column;
-    .image-container {
-
-      img {
-        object-fit: cover;
-        height: 100px;
-      }
-    }
-  }
+.buttons-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
 }

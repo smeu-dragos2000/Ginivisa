@@ -23,6 +23,8 @@ import { DonatieComponent } from './Pages/donatie/donatie.component';
 import { JoburiComponent } from './Pages/joburi/joburi.component';
 import { JobsComponent } from './Components/jobs/jobs.component';
 import { FructeComponent } from './Components/fructe/fructe.component';
+import { TurismAtractiiComponent } from './Components/turism-atractii/turism-atractii.component';
+import { TurismCazareComponent } from './Components/turism-cazare/turism-cazare.component';
 
 @NgModule({
   declarations: [
@@ -43,7 +45,9 @@ import { FructeComponent } from './Components/fructe/fructe.component';
     DonatieComponent,
     JoburiComponent,
     JobsComponent,
-    FructeComponent
+    FructeComponent,
+    TurismAtractiiComponent,
+    TurismCazareComponent
   ],
 
   imports: [
