@@ -1,21 +1,18 @@
-
 <h4 class="text-center green">Vila Ana</h4>
 
 <p>
   <strong>Vila Ana</strong> este o pensiune elegantă și modernă, care oferă o ambianță intimă, romantică, tocmai pentru că dispune de mai puține camere de oaspeți. Este un loc perfect pentru un sejur liniștit în mijlocul naturii, potrivit mai degrabă familiilor restrânse, grupurilor mai mici de prieteni și cuplurilor de îndrăgostiți. Este o casă plină de dragoste și de armonie, compartimentată așa încât să ofere căldura și intimitatea necesară musafirilor. Vila Ana este dotată cu 4 camere de 2 persoane, 2 băi, un living cu capacitate de 10 persoane, o bucătărie, un grătar, o terasă, având ca bonus spații dedicate diferitelor  jocuri de socializare (masa de tenis, masa de biliard, dartboard, joc sah si table, rummy, air hockey ice lagoon, masa de fotbal Soccer).
-
 </p>
 
-<!-- Galerie Poze Vila-->
-<div class="gallery-container">
-  <div class="gallery-item" *ngFor="let item of pozeAna">
-    <div class="image-container">
-      <img [src]="item.imageUrl" alt="">
-    </div>
-    <h5>{{item.imageTitle}}</h5>
-  </div>
-</div>
+<!-- Lightbox -->
+<ng-image-slider [images]="GalerieAna" #nav></ng-image-slider>
 
+<br>
 
+<!-- Facebook & Booking -->
+<section class="buttons">
+  <a [href]="linkFacebookAna" target="blank"><button mdbBtn color="fb" class="waves-light facebook-btn" mdbWavesEffect>facebook</button></a>
+  <a [href]="linkBookingAna" target="blank"><button mdbBtn color="fb" class="waves-light booking-btn" mdbWavesEffect>Booking</button></a>
+</section>
 
-
+<hr>

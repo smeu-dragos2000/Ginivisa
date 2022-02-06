@@ -1,48 +1,34 @@
-<section>
-  <h4 class="green">Unde te-ai putea caza pe Valea Bistriței Gorjene?</h4>
-  <p>
-    Dacă alegi să-ți petreci weekendul sau vacanța la Peștișani, pe Valea Bistriței, noi îți oferim cele mai avantajoase locuri de cazare, privind raportul calitate-preț! Nu trebuie decât să ne vizitezi pensiunile (online sau fizic) și să-ți rezervi locul din timp, iar noi îți asigurăm un sejur de poveste! Găzduit în pensiunile noastre, vei fi foarte aproape de principalele atracții turistice ale județului Gorj (Mănăstirea Tismana, municipiul Târgu Jiu, Casa Memorială „Constantin Brâncuși”, Cheile Sohodolului, Muzeul Satului, ș.a.). Noi îți oferim cele mai bune condiții de cazare! Ție nu-ți rămâne decât să descoperi comorile Gorjului și să te încarci cu energie pură!
-  </p>
-</section>
-
 
 <section  #target>
   <hr>
   <div class="thumb-container">
     <!-- Hanul Vanatorului -->
-    <div class="thumb-link turism-thumb">
+    <div class="thumb-link turism-thumb"   (click)="showHan(); scroll(target)">
       <div class="image-container">
         <img src="assets/images/Turism/MainThumb - Hanul Vanatorului.jpg" alt="">
       </div>
-      <h5>Hanul Vânătorului</h5>
-      <div class="turism-thumb-row">
-        <button class="btn-galerie" (click)="showHan(); scroll(target)">Despre <span class="material-icons">expand_more</span></button>
-        <a [href]="linkHan" target="blank"><button class="btn-rezerva">Rezerva</button></a>
+      <div class="title-container">
+        <h4>Hanul Vânătorului</h4>
       </div>
     </div>
     <!-- Vila Ana -->
-    <div class="thumb-link turism-thumb">
+    <div class="thumb-link turism-thumb"   (click)="showAna(); scroll(target)">
       <div class="image-container">
         <img src="assets/images/Turism/MainThumb - Vila Ana.jpg" alt="">
       </div>
-      <h5>Vila Ana</h5>
-      <div class="turism-thumb-row">
-        <button class="btn-galerie" (click)="showAna(); scroll(target)">Despre <span class="material-icons">expand_more</span></button>
-        <a [href]="linkAna" target="blank"><button class="btn-rezerva">Rezerva</button></a>
+      <div class="title-container">
+        <h4>Vila Ana</h4>
       </div>
     </div>
   </div>
   <hr>
 </section>
 
+
 <!-- Villa Description -->
 <section class="description-container">
+  <button class="close-btn" *ngIf="ana || han" (click)="hideAll()"><span class="material-icons">close</span></button>
   <div>
-    <button *ngIf="!home" class="close-btn"  (click)="hideAll()"><span class="material-icons">close</span></button>
-    <!-- Facebook Buttons -->
-    <a href="https://www.facebook.com/" target="blank"><button *ngIf="ana" mdbBtn color="fb" class="waves-light facebook-btn" mdbWavesEffect><i class="fab fa-facebook-f left"></i></button></a>
-    <a href="https://www.facebook.com/" target="blank"><button *ngIf="han" mdbBtn color="fb" class="waves-light facebook-btn" mdbWavesEffect><i class="fab fa-facebook-f left"></i></button></a>
-
     <app-turism-descriere-vanator *ngIf="han"></app-turism-descriere-vanator>
     <app-turism-descriere-ana *ngIf="ana"></app-turism-descriere-ana>
   </div>

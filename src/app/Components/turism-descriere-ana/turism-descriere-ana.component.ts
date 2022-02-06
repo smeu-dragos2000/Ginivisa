@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
+import  galerieAna  from '../../../assets/Data-json/Galerie-Ana.json';
 
 @Component({
   selector: 'app-turism-descriere-ana',
@@ -7,157 +8,16 @@ import { Component, OnInit } from '@angular/core';
 })
 export class TurismDescriereAnaComponent implements OnInit {
 
+  // URL Buttons
+  linkFacebookAna = "https://www.facebook.com";
+  linkBookingAna = "https://www.booking.com/hotel/ro/vila-ana-pestisani.ro.html?aid=304142;label=gen173nr-1FCAMowAFCCXBlc3Rpc2FuaUggWARowAGIAQGYASC4ARfIAQzYAQHoAQH4AQKIAgGoAgO4AurCrI4GwAIB0gIkZWY4NTFjZTgtZTBlMS00ODhiLTgwNjEtMmQ5NWRiYjMxYTk32AIF4AIB;sid=4121c0c07d16aa85c414a3dda80a6b5f;dest_id=-1166429;dest_type=city;dist=0;group_adults=2;group_children=0;hapos=1;hpos=1;no_rooms=1;req_adults=2;req_children=0;room1=A%2CA;sb_price_type=total;sr_order=popularity;srepoch=1642261135;srpvid=2bbf6e079ca60042;type=total;ucfs=1&#hotelTmpl";
+
+
+  @Input() public GalerieAna: { image: string, thumbImage: string}[] = galerieAna;
+
   constructor() { }
 
   ngOnInit(): void {
   }
-
-  pozeAna = [
-    {
-      imageUrl: "assets/images/Turism/Vila Ana/01.jpg",
-      imageTitle: "Poza 1",
-      imageDescription: "Lorem bla bla bla"
-    },
-    {
-      imageUrl: "assets/images/Turism/Vila Ana/02.jpg",
-      imageTitle: "Poza 2",
-      imageDescription: "Lorem bla bla bla"
-    },
-    {
-      imageUrl: "assets/images/Turism/Vila Ana/03.jpg",
-      imageTitle: "Poza 3",
-      imageDescription: "Lorem bla bla bla"
-    },
-    {
-      imageUrl: "assets/images/Turism/Vila Ana/04.jpg",
-      imageTitle: "Poza 4",
-      imageDescription: "Lorem bla bla bla"
-    },
-    {
-      imageUrl: "assets/images/Turism/Vila Ana/05.jpg",
-      imageTitle: "Poza 5",
-      imageDescription: "Lorem bla bla bla"
-    },
-    {
-      imageUrl: "assets/images/Turism/Vila Ana/06.jpg",
-      imageTitle: "Poza 6",
-      imageDescription: "Lorem bla bla bla"
-    },
-    {
-      imageUrl: "assets/images/Turism/Vila Ana/07.jpg",
-      imageTitle: "Poza 7",
-      imageDescription: "Lorem bla bla bla"
-    },
-    {
-      imageUrl: "assets/images/Turism/Vila Ana/08.jpg",
-      imageTitle: "Poza 8",
-      imageDescription: "Lorem bla bla bla"
-    },
-    {
-      imageUrl: "assets/images/Turism/Vila Ana/09.jpg",
-      imageTitle: "Poza 9",
-      imageDescription: "Lorem bla bla bla"
-    },
-    {
-      imageUrl: "assets/images/Turism/Vila Ana/10.jpg",
-      imageTitle: "Poza 10",
-      imageDescription: "Lorem bla bla bla"
-    },
-    {
-      imageUrl: "assets/images/Turism/Vila Ana/11.jpg",
-      imageTitle: "Poza 11",
-      imageDescription: "Lorem bla bla bla"
-    },
-    {
-      imageUrl: "assets/images/Turism/Vila Ana/12.jpg",
-      imageTitle: "Poza 12",
-      imageDescription: "Lorem bla bla bla"
-    },
-    {
-      imageUrl: "assets/images/Turism/Vila Ana/13.jpg",
-      imageTitle: "Poza 13",
-      imageDescription: "Lorem bla bla bla"
-    },
-    {
-      imageUrl: "assets/images/Turism/Vila Ana/14.jpg",
-      imageTitle: "Poza 14",
-      imageDescription: "Lorem bla bla bla"
-    },
-    {
-      imageUrl: "assets/images/Turism/Vila Ana/15.jpg",
-      imageTitle: "Poza 15",
-      imageDescription: "Lorem bla bla bla"
-    },
-    {
-      imageUrl: "assets/images/Turism/Vila Ana/16.jpg",
-      imageTitle: "Poza 16",
-      imageDescription: "Lorem bla bla bla"
-    },
-    {
-      imageUrl: "assets/images/Turism/Vila Ana/17.jpg",
-      imageTitle: "Poza 17",
-      imageDescription: "Lorem bla bla bla"
-    },
-    {
-      imageUrl: "assets/images/Turism/Vila Ana/18.jpg",
-      imageTitle: "Poza 18",
-      imageDescription: "Lorem bla bla bla"
-    },
-    {
-      imageUrl: "assets/images/Turism/Vila Ana/19.jpg",
-      imageTitle: "Poza 19",
-      imageDescription: "Lorem bla bla bla"
-    },
-    {
-      imageUrl: "assets/images/Turism/Vila Ana/20.jpg",
-      imageTitle: "Poza 20",
-      imageDescription: "Lorem bla bla bla"
-    },
-    {
-      imageUrl: "assets/images/Turism/Vila Ana/21.jpg",
-      imageTitle: "Poza 21",
-      imageDescription: "Lorem bla bla bla"
-    },
-    {
-      imageUrl: "assets/images/Turism/Vila Ana/22.jpg",
-      imageTitle: "Poza 22",
-      imageDescription: "Lorem bla bla bla"
-    },
-    {
-      imageUrl: "assets/images/Turism/Vila Ana/23.jpg",
-      imageTitle: "Poza 23",
-      imageDescription: "Lorem bla bla bla"
-    },
-    {
-      imageUrl: "assets/images/Turism/Vila Ana/24.jpg",
-      imageTitle: "Poza 24",
-      imageDescription: "Lorem bla bla bla"
-    },
-    {
-      imageUrl: "assets/images/Turism/Vila Ana/25.jpg",
-      imageTitle: "Poza 25",
-      imageDescription: "Lorem bla bla bla"
-    },
-    {
-      imageUrl: "assets/images/Turism/Vila Ana/26.jpg",
-      imageTitle: "Poza 26",
-      imageDescription: "Lorem bla bla bla"
-    },
-    {
-      imageUrl: "assets/images/Turism/Vila Ana/27.jpg",
-      imageTitle: "Poza 27",
-      imageDescription: "Lorem bla bla bla"
-    },
-    {
-      imageUrl: "assets/images/Turism/Vila Ana/28.jpg",
-      imageTitle: "Poza 28",
-      imageDescription: "Lorem bla bla bla"
-    },
-    {
-      imageUrl: "assets/images/Turism/Vila Ana/29.jpg",
-      imageTitle: "Poza 29",
-      imageDescription: "Lorem bla bla bla"
-    }
-  ]
 
 }

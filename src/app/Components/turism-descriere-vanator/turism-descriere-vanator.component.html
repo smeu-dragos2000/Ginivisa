@@ -3,11 +3,15 @@
   <strong>Hanul Vânătorului</strong> este o pensiune construită în stilul conacelor boierești de odinioară. Este nouă și miroase a lemn proaspăt, ducându-i pe amatorii de istorie cu gândul la o anexă dintr-o « villa-rustica » din Antichitatea Imperiului Roman. Este spațioasă și cuprinde 5 camere de 2 persoane cu băi private, o cameră de o persoană cu baie privată, un apartament de 4 persoane cu baie proprie, un living, o sală de mese de 25 de persoane, o bucătărie, un grătar, dar și un loc special amenajat pentru focuri de tabără. Oferind panorame de neuitat de la etaj și de la terase, Hanul Vânătorului este potrivit familiilor numeroase, dar și grupurilor mari de prieteni care vor să trăiască experiențe unice într-un loc feeric, departe de aglomerația și de poluarea urbană.
 </p>
 
-<div class="gallery-container">
-  <div class="gallery-item" *ngFor="let item of pozeHan">
-    <div class="image-container">
-      <img [src]="item.imageUrl" alt="">
-    </div>
-    <h5>{{item.imageTitle}}</h5>
-  </div>
-</div>
+<!-- Lightbox -->
+<ng-image-slider [images]="GalerieHan" #nav></ng-image-slider>
+
+<br>
+
+<!-- Facebook & Booking -->
+<section class="buttons">
+  <a [href]="linkFacebookHan" target="blank"><button mdbBtn color="fb" class="waves-light facebook-btn" mdbWavesEffect>facebook</button></a>
+  <a [href]="linkBookingHan" target="blank"><button mdbBtn color="fb" class="waves-light booking-btn" mdbWavesEffect>Booking</button></a>
+</section>
+
+<hr>

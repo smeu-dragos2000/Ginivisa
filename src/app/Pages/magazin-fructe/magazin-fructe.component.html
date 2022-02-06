@@ -32,24 +32,17 @@
       <li>Oferim și posibilitatea <strong>contractelor de colaborare</strong> cu firme sau persoane care cumpără produsele noastre în cantități mai mari, cu o anumită frecvență. În aceste cazuri, punem accentul pe ideea de fidelizare a clienților, iar avantajul comercial va fi evident.</li>
     </ul>
     <p>Pentru comenzi sau delatii ne puteti contacta la tel: <strong>+40 784 503 599</strong>  sau email: <strong>contact@ginivisa.com </strong></p>
-    <!-- <p>Dacă doriți să aflați mai multe informații despre fructele noastre, vă invităm să accesați următorul link:</p> -->
-
-  </section>
-
-  <section class="despre-fructe">
-    <button  *ngIf="!displayFructe"  (click)="showDespreFructe()">Despre Fructe  <span class="material-icons">expand_more</span></button>
-    <button  *ngIf="displayFructe"  (click)="hideDespreFructe()">Despre Fructe  <span class="material-icons">close</span></button>
-
-    <!-- <button  *ngIf="!displayFructe"  (click)="showDespreFructe()">Despre Fructe  &#11167;</button>
-    <button  *ngIf="displayFructe"  (click)="hideDespreFructe()">Despre Fructe  &#10006;</button> -->
   </section>
 
   <hr>
 
+  <section class="despre-fructe">
+    <button  *ngIf="!displayFructe"  (click)="showDespreFructe()">Despre Fructe  <span class="material-icons">expand_more</span></button>
+    <button  *ngIf="displayFructe"  (click)="hideDespreFructe()">Despre Fructe  <span class="material-icons">close</span></button>
+  </section>
+
   <section>
     <app-fructe *ngIf="displayFructe"></app-fructe>
   </section>
-
-
 
 </div>

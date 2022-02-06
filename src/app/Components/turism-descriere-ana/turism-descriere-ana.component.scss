@@ -36,5 +36,18 @@
 }
 
 
+.buttons {
+  display: flex;
+  justify-content: space-between;
+  text-decoration: none;
+  .facebook-btn {
+    background-color: #3B5998;
+  }
+  .booking-btn {
+    background-color: #003680;
+  }
+}
+
+
 
 

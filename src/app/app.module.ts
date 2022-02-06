@@ -1,7 +1,7 @@
 import { MatIconModule } from '@angular/material/icon';
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
+import { NgImageSliderModule } from 'ng-image-slider';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -21,10 +21,11 @@ import { TurismDescriereAnaComponent } from './Components/turism-descriere-ana/t
 import { TurismDescriereVanatorComponent } from './Components/turism-descriere-vanator/turism-descriere-vanator.component';
 import { DonatieComponent } from './Pages/donatie/donatie.component';
 import { JoburiComponent } from './Pages/joburi/joburi.component';
-import { JobsComponent } from './Components/jobs/jobs.component';
 import { FructeComponent } from './Components/fructe/fructe.component';
 import { TurismAtractiiComponent } from './Components/turism-atractii/turism-atractii.component';
 import { TurismCazareComponent } from './Components/turism-cazare/turism-cazare.component';
+import { JobCOOComponent } from './Components/job-coo/job-coo.component';
+import { JobSMMComponent } from './Components/job-smm/job-smm.component';
 
 @NgModule({
   declarations: [
@@ -44,16 +45,19 @@ import { TurismCazareComponent } from './Components/turism-cazare/turism-cazare.
     TurismDescriereVanatorComponent,
     DonatieComponent,
     JoburiComponent,
-    JobsComponent,
     FructeComponent,
     TurismAtractiiComponent,
-    TurismCazareComponent
+    TurismCazareComponent,
+    JobCOOComponent,
+    JobSMMComponent,
+
   ],
 
   imports: [
     BrowserModule,
     MatIconModule,
-    AppRoutingModule
+    AppRoutingModule,
+    NgImageSliderModule
   ],
   providers: [],
   bootstrap: [AppComponent]

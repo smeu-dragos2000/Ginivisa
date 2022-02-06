@@ -12,26 +12,16 @@ export class TurismComponent implements OnInit {
 }
 
   displayAtractii = false;
-  displayCazare = false;
+
 
   showAtractii() {
     this.displayAtractii = true;
-    this.displayCazare = false;
-  }
-  showCazare() {
-    this.displayAtractii = false;
-    this.displayCazare = true;
   }
 
-  hideAtractii() {
+  closeAtractii() {
     this.displayAtractii = false;
-    this.displayCazare = false;
   }
 
-  hideCazare() {
-    this.displayAtractii = false;
-    this.displayCazare = false;
-  }
 
   constructor() { }
 

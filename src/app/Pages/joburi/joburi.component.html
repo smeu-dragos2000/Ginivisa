@@ -46,13 +46,22 @@
   </section>
 
 
-  <section>
+  <section   #target>
     <h5 class="green"> Pentru ce posturi ai fi putut aplica?</h5>
     <ul>
-      <li><span  class="blue-link">Social Media Manager</span></li>
-      <li><span  class="blue-link">Chief operating officer</span></li>
+      <li><span  class="blue-link job-link"  (click)="showSMM(); scroll(target)">Social Media Manager</span></li>
+      <li><span  class="blue-link job-link"  (click)="showCOO(); scroll(target)">Chief operating officer</span></li>
     </ul>
 
+  </section>
+
+  <hr>
+
+  <!-- Job Details -->
+  <section class="description-container">
+    <button class="close-btn" *ngIf="displayCOO || displaySMM" (click)="closeAll()"><span class="material-icons">close</span></button>
+    <app-job-smm  *ngIf="displaySMM"></app-job-smm>
+    <app-job-coo  *ngIf="displayCOO"></app-job-coo>
   </section>
 
 </div>
