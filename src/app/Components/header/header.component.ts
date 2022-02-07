@@ -12,21 +12,24 @@ export class HeaderComponent implements OnInit {
   displayLogo = true;
   constructor() { }
 
-  ngOnInit(): void {}
+  ngOnInit(): void {
+    this.innerWidth = window.innerWidth;
+  }
 
   // Event Listener for window width(display)
   @HostListener('window:resize', ['$event'])
   onResize(event: any) {
-    this.innerWidth = window.innerWidth;
+    // this.innerWidth = window.innerWidth;
   }
 
   // Event Listener for window Scroll on Y
   @HostListener('window:scroll', ['$event']) // for window scroll events
   onScroll(event: any) {
     const verticalOffset = window.pageYOffset;
+    const widht = this.innerWidth;
 
-    // Logic for display/shhideow logo on small screen
-    if (verticalOffset > 50 && this.innerWidth < 800) {
+    // Logic for display/hide logo on small screen
+    if (verticalOffset > 50 && widht < 800) {
       this.displayLogo = false;
     }
 
