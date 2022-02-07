@@ -6,6 +6,7 @@ import { NgImageSliderModule } from 'ng-image-slider';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 
+
 import { HeaderComponent } from './Components/header/header.component';
 import { FooterComponent } from './Components/footer/footer.component';
 import { HomeComponent } from './Pages/home/home.component';
@@ -26,6 +27,8 @@ import { TurismAtractiiComponent } from './Components/turism-atractii/turism-atr
 import { TurismCazareComponent } from './Components/turism-cazare/turism-cazare.component';
 import { JobCOOComponent } from './Components/job-coo/job-coo.component';
 import { JobSMMComponent } from './Components/job-smm/job-smm.component';
+import { ModalClickDirective } from './Components/turism-atractii/modal-click.directive';
+
 
 @NgModule({
   declarations: [
@@ -50,6 +53,7 @@ import { JobSMMComponent } from './Components/job-smm/job-smm.component';
     TurismCazareComponent,
     JobCOOComponent,
     JobSMMComponent,
+    ModalClickDirective,
 
   ],
 

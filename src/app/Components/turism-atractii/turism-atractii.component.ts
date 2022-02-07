@@ -1,4 +1,4 @@
-import { Component, OnInit, Input } from '@angular/core';
+import { Component, OnInit, Input,  ElementRef } from '@angular/core';
 import  atractii  from '../../../assets/Data-json/atractii.json';
 
 @Component({
@@ -10,9 +10,35 @@ export class TurismAtractiiComponent implements OnInit {
 
   @Input() public Atractii: {id: number, title: string, imageURL: string, text: string}[] = atractii;
 
-  constructor() { }
+  constructor(private el: ElementRef) { }
 
   ngOnInit(): void {
+  }
+
+  showModal(event: any) {
+     // get target ID
+    let target = event.target || event.srcElement || event.currentTarget;
+    let idAttr = target.attributes.id;
+    let id = idAttr.value;
+
+    let elementClick = this.el.nativeElement.parentElement.parentElement;
+    let itemModal = elementClick.getElementsByClassName('modal')
+
+    itemModal[id].style.setProperty('display', 'block')
+    console.log('open')
+  }
+
+  closeModal(event: any) {
+    // get target ID
+    let target = event.target || event.srcElement || event.currentTarget;
+    let idAttr = target.attributes.id;
+    let id = idAttr.value;
+
+    let elementClick = this.el.nativeElement.parentElement.parentElement;
+    let itemModal = elementClick.getElementsByClassName('modal')
+
+    itemModal[id].style.setProperty('display', 'none')
+    console.log('close')
   }
 
 }
