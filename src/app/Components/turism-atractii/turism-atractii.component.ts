@@ -8,7 +8,7 @@ import  atractii  from '../../../assets/Data-json/atractii.json';
 })
 export class TurismAtractiiComponent implements OnInit {
 
-  @Input() public Atractii: {id: number, title: string, imageURL: string, text: string}[] = atractii;
+  @Input() public Atractii: {id: number, title: string, imageURL: string, thumbURL:string, text: string}[] = atractii;
 
   constructor(private el: ElementRef) { }
 

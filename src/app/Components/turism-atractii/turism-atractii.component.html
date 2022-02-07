@@ -4,7 +4,7 @@
 
     <div class="atractii-gallery">
       <div class="atractii-item text-center" *ngFor="let atractie of Atractii"  appModalClick    (click)="showModal($event)"   id={{atractie.id}}>
-        <img src={{atractie.imageURL}} alt=""  id={{atractie.id}}>
+        <img src={{atractie.thumbURL}} alt=""  id={{atractie.id}}>
         <h5   id={{atractie.id}}>{{atractie.title}}</h5>
       </div>
     </div>
