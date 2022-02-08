@@ -8,6 +8,7 @@ import { Component, OnInit } from '@angular/core';
 export class MagazinFructeComponent implements OnInit {
 
   displayFructe = false;
+  displayTEL = false;
 
   showDespreFructe() {
     this.displayFructe = true;
@@ -19,6 +20,11 @@ export class MagazinFructeComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
+    innerWidth = window.innerWidth;
+    if (innerWidth < 800) {
+      this.displayTEL = true;
+    }
+    else { this.displayTEL = false; }
   }
 
 }

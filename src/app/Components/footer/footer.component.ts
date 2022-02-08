@@ -7,9 +7,22 @@ import { Component, OnInit } from '@angular/core';
 })
 export class FooterComponent implements OnInit {
 
-  constructor() { }
+  displayTEL = false;
 
   ngOnInit(): void {
+    innerWidth = window.innerWidth;
+    if (innerWidth < 800) {
+      this.displayTEL = true;
+    }
+    else { this.displayTEL = false; }
   }
+
+
+
+
+
+  constructor() { }
+
+
 
 }

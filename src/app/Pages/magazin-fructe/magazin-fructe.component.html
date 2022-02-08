@@ -31,7 +31,14 @@
       <li>Cumpărarea directă de la standurile  din <strong>Piața Centrală</strong> și <strong>Piața 9 Mai</strong> din Tg-Jiu, unde puteți degusta și cere mai multe detalii despre fructele noastre.</li>
       <li>Oferim și posibilitatea <strong>contractelor de colaborare</strong> cu firme sau persoane care cumpără produsele noastre în cantități mai mari, cu o anumită frecvență. În aceste cazuri, punem accentul pe ideea de fidelizare a clienților, iar avantajul comercial va fi evident.</li>
     </ul>
-    <p>Pentru comenzi sau delatii ne puteti contacta la tel: <strong>+40 784 503 599</strong>  sau email: <strong>contact@ginivisa.com </strong></p>
+    <p>Pentru comenzi sau delatii ne puteti contacta la tel:
+      <strong>
+      <!-- Show/Hide active Call -->
+      <span *ngIf="!displayTEL">+40 784 503 599</span>
+      <span class=" blue-link"  *ngIf="displayTEL"><a  href="tel:+40 784 503 599">+40 784 503 599</a></span>
+      </strong>
+
+      sau email: <strong>contact@ginivisa.com </strong></p>
   </section>
 
   <hr>
