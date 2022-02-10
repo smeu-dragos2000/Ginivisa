@@ -1,0 +1,24 @@
+.contact-container {
+  display: flex;
+  gap: 1rem;
+  padding: 1rem 0;
+  .contact-column {
+    width: 100%;
+    min-height: 600px;
+    border-radius: 10px;
+  }
+}
+
+/* Google Maps */
+#googleMap {
+  width: 100%;
+  min-height: 600px;
+  border-radius: 10px;
+}
+
+
+@media screen and (max-width: 992px) {
+  .contact-container {
+    flex-direction: column;
+  }
+}

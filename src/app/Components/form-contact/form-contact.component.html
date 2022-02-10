@@ -1,0 +1,25 @@
+<form (ngSubmit)="submitForm()">
+  <!-- Name -->
+  <div class="field">
+    <label for="" class="label">Nume</label>
+    <input type="text" name="name" class="input" placeholder="Numele dumneavoastra... *"
+    [(ngModel)]="name">
+  </div>
+  <!-- Email -->
+  <div class="field">
+    <label for="" class="label">Email</label>
+    <input type="text" name="email" class="input" placeholder="Adresa de mail... *"
+    [(ngModel)]="email">
+  </div>
+  <!-- Message -->
+  <div class="field">
+    <label for="" class="label">Mesaj</label>
+    <textarea type="text" name="text" class="textarea"  style="height:210px" placeholder="Mesajul dumneavoastra... *"
+    [(ngModel)]="text"></textarea>
+  </div>
+  <!-- Send Button -->
+  <button type="submit">Trimite</button>
+
+  <!-- <div class="g-recaptcha" data-sitekey="your_site_key"></div> -->
+
+</form>

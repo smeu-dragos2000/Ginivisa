@@ -5,6 +5,7 @@ import { NgImageSliderModule } from 'ng-image-slider';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 
 import { HeaderComponent } from './Components/header/header.component';
@@ -28,6 +29,7 @@ import { TurismCazareComponent } from './Components/turism-cazare/turism-cazare.
 import { JobCOOComponent } from './Components/job-coo/job-coo.component';
 import { JobSMMComponent } from './Components/job-smm/job-smm.component';
 import { ModalClickDirective } from './Components/turism-atractii/modal-click.directive';
+import { FormContactComponent } from './Components/form-contact/form-contact.component';
 
 
 @NgModule({
@@ -54,6 +56,7 @@ import { ModalClickDirective } from './Components/turism-atractii/modal-click.di
     JobCOOComponent,
     JobSMMComponent,
     ModalClickDirective,
+    FormContactComponent,
 
   ],
 
@@ -61,7 +64,9 @@ import { ModalClickDirective } from './Components/turism-atractii/modal-click.di
     BrowserModule,
     MatIconModule,
     AppRoutingModule,
-    NgImageSliderModule
+    NgImageSliderModule,
+    FormsModule,
+    ReactiveFormsModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
