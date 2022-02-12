@@ -5,7 +5,8 @@ import { NgImageSliderModule } from 'ng-image-slider';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule, FormGroup } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
 
 
 import { HeaderComponent } from './Components/header/header.component';
@@ -57,7 +58,6 @@ import { FormContactComponent } from './Components/form-contact/form-contact.com
     JobSMMComponent,
     ModalClickDirective,
     FormContactComponent,
-
   ],
 
   imports: [
@@ -67,6 +67,7 @@ import { FormContactComponent } from './Components/form-contact/form-contact.com
     NgImageSliderModule,
     FormsModule,
     ReactiveFormsModule,
+    HttpClientModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

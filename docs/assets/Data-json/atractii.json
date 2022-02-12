@@ -36,6 +36,27 @@
   },
   {
     "id": 5,
+    "title": "Muzeul Satului",
+    "imageURL": "assets/images/Turism/Atractii/Muzeul-Satului-Curtisoara.jpg",
+    "thumbURL": "assets/images/Turism/Atractii/Thumb/Muzeul-Satului-Curtisoara.jpg",
+    "text": "„Muzeul Satului” este situat la Curtișoara, la aproximativ 35 km de zona de camping și de cea destinată cultivării fructelor. În acest loc de poveste se află o reproducere a caselor și obiectelor de lucru ale secolelor XVIII- XIX din zona subcarpatică. Acest muzeu a fost amenajat între 1966- 1975 în jurul Culei Cornoiu, construită în anul 1785."
+  },
+  {
+    "id": 6,
+    "title": "Muzeul Tezaurului BNR",
+    "imageURL": "assets/images/Turism/Atractii/Muzeul-Tezaurului-BNR.jpg",
+    "thumbURL": "assets/images/Turism/Atractii/Thumb/Muzeul-Tezaurului-BNR.jpg",
+    "text": "Muzeul Tezaurului BNR este situat la câțiva metri de Mănăstirea Tismana. Acesta a fost deschis pe data de 26 iulie 2016 în prezența Mitropolitului Olteniei, ÎPS Irineu și în prezența guvernatorului BNR, Mugur Constantin Isărescu. Povestea Tezaurului BNR, ascuns la Tismana, în perioada 1944-1947, se află în interiorul muzeului."
+  },
+  {
+    "id": 7,
+    "title": "Cele 9 biserici",
+    "imageURL": "assets/images/Turism/Atractii/Cele-9-biserici.jpg",
+    "thumbURL": "assets/images/Turism/Atractii/Thumb/Cele-9-biserici.jpg",
+    "text": "Cele 9 biserici reprezintă un ansamblu complex care se întinde pe suprafața a 7 sate: Peştişani, Brădiceni, Hobiţa, Boroşteni, Seuca, Gureni, Frânceşti. Patru dintre aceste biserici sunt sculptate în lemn și aparțin Arhiepiscopiei Craiova, cea mai veche fiind ctitorită în anul 1735 ( „Cuvioasa Paraschiva” - Peștișani), iar cea mai nouă în anul 1935 („Biserica de lemn”- Boroșteni)."
+  },
+  {
+    "id": 8,
     "title": "Târgu-Jiu",
     "imageURL": "assets/images/Turism/Atractii/Poarta-Sarutului.jpg",
     "thumbURL": "assets/images/Turism/Atractii/Thumb/Poarta-Sarutului.jpg",
