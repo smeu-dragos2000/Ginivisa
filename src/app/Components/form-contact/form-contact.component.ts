@@ -1,6 +1,9 @@
 import { Component, OnInit } from '@angular/core';
-import { HttpClientModule } from '@angular/common/http';
-import { FormGroup } from '@angular/forms';
+import { HttpClient } from '@angular/common/http';
+import { Contact } from '../../contact';
+import { ContactSendService } from '../../contact-send.service'
+import { Observable } from 'rxjs';
+
 
 @Component({
   selector: 'app-form-contact',
@@ -9,30 +12,57 @@ import { FormGroup } from '@angular/forms';
 })
 export class FormContactComponent implements OnInit {
 
-  name: string = '';
-  email: string = '';
-  text: string = '';
+  contact = new Contact;
 
+  // name: string = '';
+  // email: string = '';
+  // text: string = '';
 
+  private url = "http://localhost:8080/api"
 
-  constructor() { }
+  constructor(private http: HttpClient) { }
 
-  ngOnInit(): void {
+  name = '';
+  email = '';
+  text = '';
 
-  }
+  ngOnInit(): void {}
 
   submitForm() {
+    let data = {
+      name: this.name,
+      email: this.email,
+      text: this.text
+    }
+
     const message = `
       Nume: ${this.name}
       Email: ${this.email}
       Message: ${this.text}`
 
       if (!this.name || !this.email || !this.text) {
-        alert("Completează toate câmpurile")
+        alert("Vă rugăm să completați toate câmpurile")
       }
       else {
-        alert(message)
+        alert(data)
       }
+
+
+      return this.http.post<Contact>(this.url, data).subscribe(
+        res => {
+          data = res;
+          console.log(data);
+          alert('Email Sent successfully');
+          data.name = '';
+          data.email = '';
+          data.text = '';
+        },
+        err => {
+          console.log(err);
+        }
+      );
+
+
   }
 
 }

@@ -31,6 +31,7 @@ import { JobCOOComponent } from './Components/job-coo/job-coo.component';
 import { JobSMMComponent } from './Components/job-smm/job-smm.component';
 import { ModalClickDirective } from './Components/turism-atractii/modal-click.directive';
 import { FormContactComponent } from './Components/form-contact/form-contact.component';
+import { ContactFormComponent } from './Components/contact-form/contact-form.component';
 
 
 @NgModule({
@@ -58,6 +59,7 @@ import { FormContactComponent } from './Components/form-contact/form-contact.com
     JobSMMComponent,
     ModalClickDirective,
     FormContactComponent,
+    ContactFormComponent,
   ],
 
   imports: [

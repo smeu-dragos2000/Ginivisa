@@ -1,19 +1,17 @@
-<form (ngSubmit)="submitForm()">
+<form #userPost="ngForm" (ngSubmit)="onSubmit(userPost.value)">
   <!-- Name -->
   <div class="field">
     <label for="" class="label">Nume</label>
-    <div class="control">
-      <input type="text"
-        name="name"
-        class="input"
-        placeholder="Numele dumneavoastra... *"
-        [(ngModel)]="name"
-        #nameInput="ngModel"
-        required >
+    <input type="text"
+      name="name"
+      class="input"
+      placeholder="Numele dumneavoastra... *"
+      [(ngModel)]="name"
+      #nameInput="ngModel"
+      required >
     <div class="help is-error" *ngIf="nameInput.invalid && nameInput.touched">Necompletat *</div>
     </div>
 
-  </div>
   <!-- Email -->
   <div class="field">
     <label for="" class="label">Email</label>
@@ -26,6 +24,7 @@
       required >
     <div class="help is-error" *ngIf="emailInput.invalid && emailInput.touched">Necompletat *</div>
   </div>
+
   <!-- Message -->
   <div class="field">
     <label for="" class="label">Mesaj</label>
@@ -39,10 +38,8 @@
       required></textarea>
     <div class="help is-error" *ngIf="textInput.invalid && textInput.touched">Necompletat *</div>
   </div>
-  <!-- Send Button -->
-  <button type="submit">
-    Trimite</button>
 
-  <!-- <div class="g-recaptcha" data-sitekey="your_site_key"></div> -->
+  <!-- Send Button -->
+  <button type="submit">Trimite</button>
 
 </form>
