@@ -64,8 +64,12 @@ hr {
 }
 
 .copyright {
-  font-size: 0.9rem;
-  padding-bottom: 0.5rem;
+  font-size: 1rem;
+  padding-bottom: 0.7rem;
+  a {
+    color: white;
+  }
+
 }
 
 @media screen and (max-width: 992px) {

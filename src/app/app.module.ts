@@ -32,6 +32,9 @@ import { JobSMMComponent } from './Components/job-smm/job-smm.component';
 import { ModalClickDirective } from './Components/turism-atractii/modal-click.directive';
 import { FormContactComponent } from './Components/form-contact/form-contact.component';
 import { ContactFormComponent } from './Components/contact-form/contact-form.component';
+import { BrainHubComponent } from './Pages/brain-hub/brain-hub.component';
+import { SwiperModule } from 'swiper/angular';
+import { SwiperGalleryComponent } from './Components/swiper-gallery/swiper-gallery.component';
 
 
 @NgModule({
@@ -60,6 +63,9 @@ import { ContactFormComponent } from './Components/contact-form/contact-form.com
     ModalClickDirective,
     FormContactComponent,
     ContactFormComponent,
+    BrainHubComponent,
+    SwiperGalleryComponent,
+    
   ],
 
   imports: [
@@ -70,6 +76,7 @@ import { ContactFormComponent } from './Components/contact-form/contact-form.com
     FormsModule,
     ReactiveFormsModule,
     HttpClientModule,
+    SwiperModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

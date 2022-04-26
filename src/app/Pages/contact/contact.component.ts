@@ -7,9 +7,16 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ContactComponent implements OnInit {
 
+  displayTEL = false;
+
   constructor() { }
 
   ngOnInit(): void {
+    innerWidth = window.innerWidth;
+    if (innerWidth < 800) {
+      this.displayTEL = true;
+    }
+    else { this.displayTEL = false; }
   }
 
 }

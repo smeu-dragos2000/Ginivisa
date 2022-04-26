@@ -6,10 +6,16 @@
 * {
   font-family: 'Poppins', sans-serif;
   transition: all 100ms;
+  background-color: transparent;
 }
 
 h1, h2, h3, h4, h5, h6 {
   font-weight: bold;
+}
+
+.d-flex-col {
+  display: flex;
+  flex-direction: column;
 }
 
 // Text Color
@@ -24,6 +30,11 @@ h1, h2, h3, h4, h5, h6 {
 .blue-link {
   color: #007bff;
 }
+
+.container {
+  background-color: transparent;
+}
+
 
 // Header
 .header-container {

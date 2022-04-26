@@ -1,5 +1,13 @@
 [
   {
+    "image": "assets/images/Turism/Vila Ana/00.jpg",
+    "thumbImage": "assets/images/Turism/Vila Ana/Thumb/00.jpg"
+  },
+  {
+    "image": "assets/images/Turism/Vila Ana/00a.jpg",
+    "thumbImage": "assets/images/Turism/Vila Ana/Thumb/00a.jpg"
+  },
+  {
     "image": "assets/images/Turism/Vila Ana/01.jpg",
     "thumbImage": "assets/images/Turism/Vila Ana/Thumb/01.jpg"
   },
@@ -38,6 +46,10 @@
   {
     "image": "assets/images/Turism/Vila Ana/19.jpg",
     "thumbImage": "assets/images/Turism/Vila Ana/Thumb/19.jpg"
+  },
+  {
+    "image": "assets/images/Turism/Vila Ana/19a.jpg",
+    "thumbImage": "assets/images/Turism/Vila Ana/Thumb/19a.jpg"
   },
   {
     "image": "assets/images/Turism/Vila Ana/20.jpg",

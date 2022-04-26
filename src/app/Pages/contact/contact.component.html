@@ -19,12 +19,42 @@
 <section>
   <div class="container contact-container">
 
-    <!-- COntact Form -->
-    <div class="contact-column">
+    <!-- Contact simplu -->
+    <div class="contact-simplu">
+      <div class="contact-group">
+        <p>Nu ai găsit ce cauți pe pagina noastră? Sau pur și simplu vrei să aflii mai multe despre ceea ce facem noi? Nu ezita să ne contactezi</p>
+      </div>
 
-      <app-contact-form></app-contact-form>
-      <!-- <app-form-contact></app-form-contact> -->
+      <div class="contact-group">
+        <h4 class="green">Program Birou</h4>
+        <ul>
+          <li>Luni - Vineri: 08:00 - 20:00</li>
+          <li>Weekend: 08:00 - 14:00</li>
+        </ul>
+      </div>
+
+      <div class="contact-group">
+        <div class="row">
+          <mat-icon>email</mat-icon>
+          <span *ngIf="!displayTEL">contact@ginivisa.com</span>
+          <span class="contact-link"  *ngIf="displayTEL"><a  href="mailto:contact@ginivisa.com">contact@ginivisa.com</a></span>
+        </div>
+
+        <div class="row">
+          <mat-icon>phone</mat-icon>
+          <span *ngIf="!displayTEL">+40 784 503 599</span>
+          <span class="contact-link"  *ngIf="displayTEL"><a  href="tel:+40 784 503 599">+40 784 503 599</a></span>
+        </div>
+      </div>
+
     </div>
+
+
+
+    <!-- COntact Form -->
+    <!-- <div class="contact-column">
+      <app-contact-form></app-contact-form>
+    </div> -->
 
     <!-- Google Maps Api -->
     <div class="contact-column">
