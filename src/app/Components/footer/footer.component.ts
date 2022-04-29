@@ -1,5 +1,9 @@
 import { Component, OnInit } from '@angular/core';
 
+import { Router, NavigationEnd  } from '@angular/router';
+import {Location} from '@angular/common';
+
+
 @Component({
   selector: 'app-footer',
   templateUrl: './footer.component.html',
@@ -18,10 +22,18 @@ export class FooterComponent implements OnInit {
   }
 
 
+  // Condition for Contact Ginivisa/BrainHub
 
+  myRoute: any;
 
-
-  constructor() { }
+  constructor(router: Router, public location: Location ){
+    router.events.subscribe((val) => {
+      if(val instanceof NavigationEnd) {
+        this.myRoute = this.location.path().toString();
+        console.log(this.myRoute);
+      }
+    });
+  }
 
 
 

@@ -182,6 +182,14 @@ p {
   height: 1rem;
 }
 
+// Contact-Logo
+.contact-logo {
+
+
+  img {
+    min-width: 50px;
+  }
+}
 
 // Media Query
 @media only screen and (max-width: 1200px) {

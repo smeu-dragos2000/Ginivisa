@@ -44,9 +44,9 @@
       </div>
     </div>
 
-    <!-- Address Column -->
-    <div class="footer-column">
-      <h4 class="text-center">Contact</h4>
+    <!-- Address Column  For Ginivisa-->
+    <div class="footer-column"      *ngIf="myRoute != '/brain-hub'">
+      <h4 class="text-center">Contact Ginivișa</h4>
       <div class="footer-row">
         <mat-icon>home</mat-icon>
         <span>Județ Gorj, comuna Peștișani, sat Gureni, strada Barajelor, nr. 84, 217335</span>
@@ -61,6 +61,26 @@
         <span class="footer-link"  *ngIf="displayTEL"><a  href="tel:+40 784 503 599">+40 784 503 599</a></span>
       </div>
     </div>
+
+    <!-- Address Column  For BrainHub-->
+    <div class="footer-column"    *ngIf="myRoute == '/brain-hub'">
+      <h4 class="text-center">Contact BrainHub</h4>
+
+      <div class="footer-row">
+          <mat-icon>home</mat-icon>
+          <span>Strada Popa Tatu, Nr. 18, Sector 1, București.</span>
+      </div>
+      <div class="footer-row">
+          <mat-icon>phone</mat-icon>
+          <span *ngIf="!displayTEL">+40 724 363 511</span>
+          <span class="footer-link"  *ngIf="displayTEL"><a  href="tel:+40 784 503 599">+40 784 503 599</a></span>
+      </div>
+      <div class="footer-row">
+          <mat-icon>email</mat-icon>
+          <span>contact@ginivisa.com</span>
+      </div>
+    </div>
+
 
   </div>
 

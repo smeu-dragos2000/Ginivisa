@@ -14,6 +14,7 @@ import { BrainHubComponent } from './Pages/brain-hub/brain-hub.component';
 
 
 const routes: Routes = [
+
   {path: '', component: HomeComponent},
   {path: 'magazin-fructe', component: MagazinFructeComponent},
   {path: 'contact', component: ContactComponent},
@@ -23,6 +24,7 @@ const routes: Routes = [
   {path: 'joburi', component: JoburiComponent},
   {path: 'donatie', component: DonatieComponent},
   {path: '**', component: HomeComponent},
+
   // {path: 'admin', component: AdminComponent},
 ];
 
