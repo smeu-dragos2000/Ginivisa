@@ -35,6 +35,8 @@ import { ContactFormComponent } from './Components/contact-form/contact-form.com
 import { BrainHubComponent } from './Pages/brain-hub/brain-hub.component';
 import { SwiperModule } from 'swiper/angular';
 import { SwiperGalleryComponent } from './Components/swiper-gallery/swiper-gallery.component';
+import { SwiperGalleryFructeComponent } from './Components/swiper-gallery-fructe/swiper-gallery-fructe.component';
+
 
 
 @NgModule({
@@ -65,7 +67,9 @@ import { SwiperGalleryComponent } from './Components/swiper-gallery/swiper-galle
     ContactFormComponent,
     BrainHubComponent,
     SwiperGalleryComponent,
-    
+    SwiperGalleryFructeComponent,
+
+
   ],
 
   imports: [

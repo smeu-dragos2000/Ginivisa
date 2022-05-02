@@ -43,13 +43,21 @@
 
   <hr>
 
+
+<!-- Show "Despre Fructe" / "Gallery" -->
+
   <section class="despre-fructe">
     <button  *ngIf="!displayFructe"  (click)="showDespreFructe()">Despre Fructe  <span class="material-icons">expand_more</span></button>
     <button  *ngIf="displayFructe"  (click)="hideDespreFructe()">Despre Fructe  <span class="material-icons">close</span></button>
+    <button  *ngIf="!displayGallery"  (click)="showGalleryFructe()">Galerie Fructe  <span class="material-icons">expand_more</span></button>
+    <button  *ngIf="displayGallery"  (click)="hideGalleryFructe()">Galerie Fructe  <span class="material-icons">close</span></button>
+    <!-- <button  *ngIf="displayFructe"  (click)="hideDespreFructe()">Despre Fructe  <span class="material-icons">close</span></button> -->
   </section>
 
   <section>
     <app-fructe *ngIf="displayFructe"></app-fructe>
+    <app-swiper-gallery-fructe *ngIf="displayGallery"></app-swiper-gallery-fructe>
+
   </section>
 
 </div>
