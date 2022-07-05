@@ -9,7 +9,8 @@ import { NoutatiComponent } from './Pages/noutati/noutati.component';
 import { JoburiComponent } from './Pages/joburi/joburi.component';
 import { DonatieComponent } from './Pages/donatie/donatie.component';
 import { BrainHubComponent } from './Pages/brain-hub/brain-hub.component';
-// import { AdminComponent } from './Pages/admin/admin.component';
+
+import { HashLocationStrategy, PathLocationStrategy, LocationStrategy } from '@angular/common';
 
 
 
@@ -25,11 +26,13 @@ const routes: Routes = [
   {path: 'donatie', component: DonatieComponent},
   {path: '**', component: HomeComponent},
 
-  // {path: 'admin', component: AdminComponent},
+
 ];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes, {scrollPositionRestoration: 'enabled'})],
-  exports: [RouterModule]
+  exports: [RouterModule],
+  providers: [{provide: LocationStrategy, useClass: HashLocationStrategy }]
+  // providers: [{provide: LocationStrategy, useClass: PathLocationStrategy }]
 })
 export class AppRoutingModule { }
