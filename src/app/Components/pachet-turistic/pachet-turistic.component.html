@@ -1,0 +1,165 @@
+<h5 class="text-center green">Activități turistice </h5>
+
+<div class="ziua">
+  <div class="ziua-item"   *ngFor="let ziua of Ziua"   appModalClick  (click)="showModal($event)"   id={{ziua.id}}>
+    <h5 class="green text-center" (click)="showModal($event)" id={{ziua.id}}>Pachet  {{ ziua.ziua }}</h5>
+    <img src={{ziua.imgThumb}} alt=""  id={{ziua.id}}>
+  </div>
+</div>
+
+
+<!-- Modal -->
+<div class="modal-container">
+  <div class="modal"   *ngFor="let ziua of Ziua"  id={{ziua.id}}>
+
+    <div class="modal-content">
+      <div class="description" *ngFor="let item of ziua.activity" id={{ziua.id}}>
+        <h6>{{item.title}}</h6>
+        <p>{{item.list}}</p>
+      </div>
+      <img src={{ziua.imgThumb}} alt=""  id={{ziua.id}}>
+    </div>
+    <button id={{ziua.id}} class="close-modal" (click)="closeModal($event)">
+      <span id={{ziua.id}} class="material-icons" >close</span>
+    </button>
+  </div>
+</div>
+
+
+
+
+
+<!-- <div class="pachet-gallery">
+
+
+  <div class="activitati-gallery">
+    <div class="activitati-item text-center" *ngFor="let activitate of ziua1"  appModalClick    (click)="showModal($event)"   id={{activitate.id}}>
+      <img src={{activitate.thumbURL}} alt=""  id={{activitate.id}}>
+      <h5   id={{activitate.id}}>{{activitate.title}}</h5>
+    </div>
+  </div>
+
+  <div class="activitati-gallery">
+    <div class="activitati-item text-center" *ngFor="let activitate of ziua2"  appModalClick    (click)="showModal($event)"   id={{activitate.id}}>
+      <img src={{activitate.thumbURL}} alt=""  id={{activitate.id}}>
+      <h5   id={{activitate.id}}>{{activitate.title}}</h5>
+    </div>
+  </div>
+</div> -->
+
+
+
+
+
+
+
+
+<!-- Gallery -->
+
+  <!-- <div class="pachet-gallery">
+
+    <h5 class="text-center green">Ziua 1</h5>
+    <div class="activitati-gallery">
+      <div class="activitati-item text-center" *ngFor="let activitate of ziua1"  appModalClick    (click)="showModal($event)"   id={{activitate.id}}>
+        <img src={{activitate.thumbURL}} alt=""  id={{activitate.id}}>
+        <h5   id={{activitate.id}}>{{activitate.title}}</h5>
+      </div>
+    </div>
+
+    <hr>
+
+    <h5 class="text-center green">Ziua 2</h5>
+    <div class="activitati-gallery">
+      <div class="activitati-item text-center" *ngFor="let activitate of ziua2"  appModalClick    (click)="showModal($event)"   id={{activitate.id}}>
+        <img src={{activitate.thumbURL}} alt=""  id={{activitate.id}}>
+        <h5   id={{activitate.id}}>{{activitate.title}}</h5>
+      </div>
+    </div>
+
+    <hr>
+
+    <h5 class="text-center green">Ziua 3</h5>
+    <div class="activitati-gallery">
+      <div class="activitati-item text-center" *ngFor="let activitate of ziua3"  appModalClick    (click)="showModal($event)"   id={{activitate.id}}>
+        <img src={{activitate.thumbURL}} alt=""  id={{activitate.id}}>
+        <h5   id={{activitate.id}}>{{activitate.title}}</h5>
+      </div>
+    </div>
+
+    <hr>
+
+    <h5 class="text-center green">Ziua 4</h5>
+    <div class="activitati-gallery">
+      <div class="activitati-item text-center" *ngFor="let activitate of ziua4"  appModalClick    (click)="showModal($event)"   id={{activitate.id}}>
+        <img src={{activitate.thumbURL}} alt=""  id={{activitate.id}}>
+        <h5  id={{activitate.id}}>{{activitate.title}}</h5>
+      </div>
+    </div>
+
+    <hr>
+
+    <h5 class="text-center green">Ziua 5</h5>
+    <div class="activitati-gallery">
+      <div class="activitati-item text-center" *ngFor="let activitate of ziua5"  appModalClick    (click)="showModal($event)"   id={{activitate.id}}>
+        <img src={{activitate.thumbURL}} alt=""  id={{activitate.id}}>
+        <h5   id={{activitate.id}}>{{activitate.title}}</h5>
+      </div>
+    </div>
+
+  </div> -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- <h5 class="green text-center ">PACHETE TURISTICE </h5>
+
+  <h6 class="green">ZIUA 1</h6>
+  <div class="row">
+      <p><strong>TURISM CULTURAL</strong> - vizitarea casei memoriale Constantin Brâncuși de la Hobița și a Muzeului Satului din Gureni.</p>
+      <p><strong>TURISM RELIGIOS</strong> - vizitarea Mănăstirii Tismana și a Schitului de la Cioclovina de Jos de lângă Tismana; vizitarea bisericilor de lemn de la Gureni, Hobița, Frâncești și Peștișani.</p>
+  </div>
+
+  <h6 class="green">ZIUA 2</h6>
+  <div class="row">
+      <p><strong>TURISM DE AGREMENT</strong> - drumeție în Valea Nucu și în Poiana Mărului.</p>
+  </div>
+
+  <h6 class="green">ZIUA 3</h6>
+  <p><strong>TURISM DE AGREMENT</strong> - vizitarea barajelor Vâja și Clocotiș, dar și vizitarea Golului Alpin cu vârful Oslea  (1946 m) și vârful Arcanu (1760m).</p>
+
+  <h6 class="green">ZIUA 4</h6>
+  <p><strong>TURISM DE AGREMENT</strong> - excursie la Cheile Sohodolului unde sunt amenajate si omologate trasee de alpinism; escaladă care să corespundă cerințelor turiștilor, precum și ateliere de rapel și tiroliană.</p>
+
+  <h6 class="green">ZIUA 5</h6>
+  <p><strong>NATURA ȘI OBIECTIVELE TURISTICE DIN PEȘTIȘANI:</strong></p>
+  <ul>
+    <li>Valea Bistriței - reprezintă pentru turiștii iubitori de natură un punct de atracție, fiind o zonă sălbatică.  Bistrița gorjeană este un afluent al râului Tismana și se formează la confluența a două brațe: Negoiu și Groapele.</li>
+    <li>Stejarul secular din Brădiceni a fost plantat în anul 1864 în memoria eroilor care s-au jertfit pentru eliberarea Olteniei de sub ocupație austriacă.</li>
+    <li>Piatra Boroștenilor este o rezervație naturală cu o suprafață 28 ha și reprezintă o zonă montană de interes geologic, floristic și imagistic; aici există o specie rară de plantă de stâncă denumită popular „Crucea Voinicului” (Hepatica Transsilvanica).</li>
+    <li>Peștera Cioarei este una dintre cele mai vechi din istoria omenirii. În această zonă, s-au găsit urme ale existenței umane mai vechi de 50 000 de ani.</li>
+    <li>Lacurile din Pestisani situate in spatele Primariei reprezinta o oaza de liniste de o frumusete rar intalnita.</li>
+  </ul>
+
+  <h6 class="green">ZIUA 6</h6>
+  <p><strong>ACTIVITĂȚI SPORTIVE</strong> - tenis de masă, tenis de câmp, fotbal-tenis, biliard.</p>
+  <p><strong>ACTIVITĂȚI RECREATIVE</strong> - ciubar cu jacuzzi, darts, rumy, table ,sah, carti, etc.</p>
+  <p><strong>ACTIVITĂȚI GASTRONOMICE</strong> - grătar, ceaun.</p>
+  <p><strong>KIT DE SUPRAVIEȚUIRE ÎN NATURĂ</strong> - alimentație, orientare, îmbrăcăminte.</p>
+
+  <h6 class="green">ZIUA 7</h6>
+  <p><strong>CULESUL FRUCTELOR DE LA FERMA GINIVIȘA</strong> - se va face o activitate organizată, în cadrul căreia se vor culege fructe (căpșuni, zmeură, mere etc).</p> -->

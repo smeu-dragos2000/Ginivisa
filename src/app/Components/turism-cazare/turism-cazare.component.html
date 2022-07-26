@@ -1,9 +1,10 @@
 
 <section  #target>
-  <hr>
+  <!-- <hr> -->
   <div class="thumb-container">
     <!-- Hanul Vanatorului -->
-    <div class="thumb-link turism-thumb"   (click)="showHan(); scroll(target)">
+    <!-- <div class="thumb-link turism-thumb"   (click)="showHan(); scroll(target)"> -->
+    <div class="thumb-link turism-thumb"   routerLink="/turism-han">
       <div class="image-container">
         <img src="assets/images/Turism/MainThumb - Hanul Vanatorului.jpg" alt="">
       </div>
@@ -12,7 +13,8 @@
       </div>
     </div>
     <!-- Vila Ana -->
-    <div class="thumb-link turism-thumb"   (click)="showAna(); scroll(target)">
+    <!-- <div class="thumb-link turism-thumb"   (click)="showAna(); scroll(target)"> -->
+      <div class="thumb-link turism-thumb"   routerLink="/turism-ana">
       <div class="image-container">
         <img src="assets/images/Turism/MainThumb - Vila Ana.jpg" alt="">
       </div>
@@ -21,15 +23,15 @@
       </div>
     </div>
   </div>
-  <hr>
+
 </section>
 
 
 <!-- Villa Description -->
-<section class="description-container">
+<!-- <section class="description-container">
   <button class="close-btn" *ngIf="ana || han" (click)="hideAll()"><span class="material-icons">close</span></button>
   <div>
     <app-turism-descriere-vanator *ngIf="han"></app-turism-descriere-vanator>
     <app-turism-descriere-ana *ngIf="ana"></app-turism-descriere-ana>
   </div>
-</section>
+</section> -->

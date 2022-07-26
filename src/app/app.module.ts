@@ -36,6 +36,11 @@ import { BrainHubComponent } from './Pages/brain-hub/brain-hub.component';
 import { SwiperModule } from 'swiper/angular';
 import { SwiperGalleryComponent } from './Components/swiper-gallery/swiper-gallery.component';
 import { SwiperGalleryFructeComponent } from './Components/swiper-gallery-fructe/swiper-gallery-fructe.component';
+import { TurismHanComponent } from './Pages/turism-han/turism-han.component';
+import { TurismAnaComponent } from './Pages/turism-ana/turism-ana.component';
+import { JobContabilComponent } from './Components/job-contabil/job-contabil.component';
+import { PachetTuristicComponent } from './Components/pachet-turistic/pachet-turistic.component';
+import { PachetZiuaComponent } from './Components/pachet-ziua/pachet-ziua.component';
 
 
 
@@ -68,6 +73,11 @@ import { SwiperGalleryFructeComponent } from './Components/swiper-gallery-fructe
     BrainHubComponent,
     SwiperGalleryComponent,
     SwiperGalleryFructeComponent,
+    TurismHanComponent,
+    TurismAnaComponent,
+    JobContabilComponent,
+    PachetTuristicComponent,
+    PachetZiuaComponent,
 
 
   ],

@@ -9,6 +9,8 @@ import { NoutatiComponent } from './Pages/noutati/noutati.component';
 import { JoburiComponent } from './Pages/joburi/joburi.component';
 import { DonatieComponent } from './Pages/donatie/donatie.component';
 import { BrainHubComponent } from './Pages/brain-hub/brain-hub.component';
+import { TurismAnaComponent } from './Pages/turism-ana/turism-ana.component';
+import { TurismHanComponent } from './Pages/turism-han/turism-han.component';
 
 import { HashLocationStrategy, PathLocationStrategy, LocationStrategy } from '@angular/common';
 
@@ -20,6 +22,8 @@ const routes: Routes = [
   {path: 'magazin-fructe', component: MagazinFructeComponent},
   {path: 'contact', component: ContactComponent},
   {path: 'turism', component: TurismComponent},
+  {path: 'turism-ana', component: TurismAnaComponent},
+  {path: 'turism-han', component: TurismHanComponent},
   {path: 'brain-hub', component: BrainHubComponent},
   {path: 'noutati', component: NoutatiComponent},
   {path: 'joburi', component: JoburiComponent},

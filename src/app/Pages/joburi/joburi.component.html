@@ -26,9 +26,9 @@
     </P>
     <h5 class="green">Ce îți oferim?</h5>
     <ul>
-      <li>Asigurare de sănătate</li>
+      <li>Asigurare de sănătate;</li>
       <li>Salariu motivant și bonusuri ocazionale;</li>
-      <li>Vechime în câmpul muncii</li>
+      <li>Vechime în câmpul muncii;</li>
       <li>Echipament de lucru și îmbrăcăminte de lucru asigurate;</li>
       <li>Transport asigurat.</li>
     </ul>
@@ -48,21 +48,28 @@
 
 
   <section   #target>
-    <h5 class="green"> Pentru ce posturi ai putea aplica?</h5>
+    <h5 class="green"> Pentru ce posturi ai fi putut aplica?</h5>
     <ul>
       <li><span  class="blue-link job-link"  (click)="showSMM(); scroll(target)">Bucătar</span></li>
-      <li><span  class="blue-link job-link"  (click)="showCOO(); scroll(target)">Ospătar</span></li>
+      <li><span  class="blue-link job-link"  (click)="showCOO(); scroll(target)">Opătar</span></li>
     </ul>
-
   </section>
+
+  <!-- <section   #target>
+    <h5 class="green"> Pentru ce posturi ai putea aplica?</h5>
+    <ul>
+      <li><span  class="blue-link job-link"  (click)="showContabil(); scroll(target)">Contabil</span></li>
+    </ul>
+  </section> -->
 
   <hr>
 
   <!-- Job Details -->
   <section class="description-container">
-    <button class="close-btn" *ngIf="displayCOO || displaySMM" (click)="closeAll()"><span class="material-icons">close</span></button>
+    <button class="close-btn" *ngIf="displayCOO || displaySMM || displayContabil" (click)="closeAll()"><span class="material-icons">close</span></button>
     <app-job-smm  *ngIf="displaySMM"></app-job-smm>
     <app-job-coo  *ngIf="displayCOO"></app-job-coo>
+    <app-job-contabil  *ngIf="displayContabil"></app-job-contabil>
   </section>
 
 </div>

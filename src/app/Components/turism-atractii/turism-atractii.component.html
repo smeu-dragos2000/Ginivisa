@@ -1,6 +1,5 @@
 <section>
-    <h4 class="green">Atractii Turistice</h4>
-    <p>Valea Bistriței de Gorj este petecul de pământ în care natura a modelat o lume sălbatică, înțesată de munți, ape și păduri de o frumusețe spectaculară. Pe aceste meleaguri rustice, fabuloase, omul a dat o mână de ajutor naturii, amenajând drumuri, stațiuni montane, localități și muzee ce au devenit principalele atracții turistice din zona Gorjului. Despre o parte dintre ele, cele situate chiar în apropierea fermei Ginivișa, vom vorbi în continuare. Unele muzee și case memoriale amintite mai jos sunt cu atât mai speciale, cu cât sunt legate de locul nașterii și de viețile unor personalități de seamă din regiunea Olteniei.</p>
+
 
     <div class="atractii-gallery">
       <div class="atractii-item text-center" *ngFor="let atractie of Atractii"  appModalClick    (click)="showModal($event)"   id={{atractie.id}}>
@@ -8,16 +7,16 @@
         <h5   id={{atractie.id}}>{{atractie.title}}</h5>
       </div>
     </div>
-<!-- Modal -->
 
+<!-- Modal -->
     <div class="modal-container">
       <div class="modal"   *ngFor="let atractie of Atractii"  id={{atractie.id}}>
         <div class="modal-content">
-          <img src={{atractie.imageURL}} alt="">
           <div class="description">
             <h4>{{atractie.title}}</h4>
             <p>{{atractie.text}}</p>
           </div>
+          <img src={{atractie.imageURL}} alt="">
         </div>
         <button id={{atractie.id}} class="close-modal" (click)="closeModal($event)">
           <span id={{atractie.id}} class="material-icons" >close</span>

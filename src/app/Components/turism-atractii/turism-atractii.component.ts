@@ -25,7 +25,6 @@ export class TurismAtractiiComponent implements OnInit {
     let itemModal = elementClick.getElementsByClassName('modal')
 
     itemModal[id].style.setProperty('display', 'block')
-    console.log('open')
   }
 
   closeModal(event: any) {
@@ -38,7 +37,6 @@ export class TurismAtractiiComponent implements OnInit {
     let itemModal = elementClick.getElementsByClassName('modal')
 
     itemModal[id].style.setProperty('display', 'none')
-    console.log('close')
   }
 
 }
