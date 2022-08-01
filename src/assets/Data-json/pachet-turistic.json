@@ -2,6 +2,7 @@
   {
     "id": 0,
     "ziua": 1,
+    "price": 50,
     "activity": [
       {
         "title": "TURISM CULTURAL",
@@ -24,6 +25,7 @@
   {
     "id": 1,
     "ziua": 2,
+    "price": 50,
     "activity": [
       {
         "title": "TURISM DE AGREMENT",
@@ -40,6 +42,7 @@
   {
     "id": 2,
     "ziua": 3,
+    "price": 50,
     "activity": [
       {
         "title": "TURISM DE AGREMENT",
@@ -56,6 +59,7 @@
   {
     "id": 3,
     "ziua": 4,
+    "price": 50,
     "activity": [
       {
         "title": "TURISM DE AGREMENT",
@@ -72,11 +76,12 @@
   {
     "id": 4,
     "ziua": 5,
+    "price": 50,
     "activity": [
       {
         "title": "NATURA ȘI OBIECTIVELE TURISTICE DIN PEȘTIȘANI",
         "list": [
-          "Valea Bistriței reprezintă pentru turiștii iubitori de natură un punct de atracție, fiind o zonă sălbatică.  Bistrița gorjeană este un afluent al râului Tismana și se formează la confluența a două brațe: Negoiu și Groapele.", "Stejarul secular din Brădiceni a fost plantat în anul 1864 în memoria eroilor care s-au jertfit pentru eliberarea Olteniei de sub ocupație austriacă.", "Piatra Boroștenilor este o rezervație naturală cu o suprafață 28 ha și reprezintă o zonă montană de interes geologic, floristic și imagistic; aici există o specie rară de plantă de stâncă denumită popular „Crucea Voinicului” (Hepatica Transsilvanica)." , "Peștera Cioarei este una dintre cele mai vechi din istoria omenirii. În această zonă, s-au găsit urme ale existenței umane mai vechi de 50 000 de ani." , "Lacurile din Pestisani situate in spatele Primariei reprezinta o oaza de liniste de o frumusete rar intalnita."
+          "Valea Bistriței - reprezintă pentru turiștii iubitori de natură un punct de atracție, fiind o zonă sălbatică.  Bistrița gorjeană este un afluent al râului Tismana și se formează la confluența a două brațe: Negoiu și Groapele.", "Stejarul secular din Brădiceni - a fost plantat în anul 1864 în memoria eroilor care s-au jertfit pentru eliberarea Olteniei de sub ocupație austriacă.", "Piatra Boroștenilor - este o rezervație naturală cu o suprafață 28 ha și reprezintă o zonă montană de interes geologic, floristic și imagistic; aici există o specie rară de plantă de stâncă denumită popular „Crucea Voinicului” (Hepatica Transsilvanica)." , "Peștera Cioarei - este una dintre cele mai vechi din istoria omenirii. În această zonă, s-au găsit urme ale existenței umane mai vechi de 50 000 de ani." , "Lacurile din Pestisani - situate in spatele Primariei reprezinta o oaza de liniste de o frumusete rar intalnita."
         ]
       }
     ],
@@ -88,6 +93,7 @@
   {
     "id": 5,
     "ziua": 6,
+    "price": 50,
     "activity": [
       {
         "title": "ACTIVITĂȚI SPORTIVE",
@@ -122,6 +128,7 @@
   {
     "id": 6,
     "ziua": 7,
+    "price": 50,
     "activity": [
       {
         "title": "CULESUL FRUCTELOR DE LA FERMA GINIVIȘA ",

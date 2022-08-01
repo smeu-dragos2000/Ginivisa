@@ -1,3 +1,7 @@
+@import "~swiper/css";
+@import "~swiper/css/navigation";
+@import "~swiper/css/thumbs";
+
   .ziua {
     padding-top: 0.5rem;
     display: grid;
@@ -15,7 +19,7 @@
         border-radius: 0.5rem;
         object-fit: cover;
       }
-      h5 {
+      .title-container {
         color: white;
         position: absolute;
         top: 50%;
@@ -24,13 +28,26 @@
         border-radius: 0.5rem;
         padding: 0.5rem;
         text-shadow: 1px 1px 3px black;
+        transition: all 150ms ease;
+        h6 {
+          opacity: 0;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          .small {
+            padding: 0.5rem;
+          }
+        }
       }
       &:hover {
         box-shadow: 0 3px 15px rgba(0, 0, 0, 0.7);
-        h5 {
+        .title-container {
           background-color: rgba(0, 59, 28, 0.363);
           border: 2px solid white;
           box-shadow: 1px 1px 3px black;
+          h6 {
+            opacity: 1;
+          }
         }
       }
     }
@@ -40,14 +57,14 @@
 // Modal
 .modal-container {
   position: fixed;
-  text-align: center;
+  // text-align: center;
   top: 0;
   left: 0;
   z-index: 10000;
   width: 100%;
   .modal {
     position: fixed;
-    text-align: center;
+    // text-align: center;
     top: 0;
     left: 0;
     width: 100%;
@@ -70,6 +87,60 @@
         width: 100%;
         margin: auto;
         max-width: 1100px;
+      }
+      // Swiper
+      .swiper {
+        width: 100%;
+      }
+      .swiper-slide {
+        text-align: center;
+        font-size: 18px;
+        /* Center slide text vertically */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .swiper-slide img {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+      .swiper {
+        width: 100%;
+        height: 300px;
+        margin-left: auto;
+        margin-right: auto;
+      }
+      .swiper-slide {
+        background-size: cover;
+        background-position: center;
+      }
+      .mySwiper2 {
+        height: 80%;
+        width: 100%;
+      }
+      .mySwiper {
+        border: 1px solid red;
+
+
+
+        padding: 10px 0;
+      }
+      .mySwiper .swiper-slide {
+        width: 20%;
+        height: 100%;
+        opacity: 0.4;
+        cursor: pointer;
+      }
+      .mySwiper .swiper-slide-thumb-active {
+        opacity: 1;
+      }
+      .swiper-slide img {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
       }
     }
 
@@ -96,3 +167,9 @@
     }
   }
 }
+
+
+
+
+
+
