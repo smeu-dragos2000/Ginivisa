@@ -1,6 +1,8 @@
 @import "~swiper/css";
 @import "~swiper/css/navigation";
 @import "~swiper/css/thumbs";
+@import "~swiper/css/pagination";
+
 
   .ziua {
     padding-top: 0.5rem;
@@ -122,8 +124,6 @@
       }
       .mySwiper {
         border: 1px solid red;
-
-
 
         padding: 10px 0;
       }
